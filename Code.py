@@ -144,6 +144,10 @@ class Game:
                victory_surf = self.font.render('VICTORY', False, 'white')
                victory_rect = victory_surf.get_rect(center = (screen_width/2, screen_height/2))
                screen.blit(victory_surf, victory_rect)
+               pygame.display.flip()
+               pygame.time.wait(2000)
+               pygame.quit()
+               sys.exit()
 
      def run(self):
           self.player.update()
