@@ -13,7 +13,7 @@ class Alien(pygame.sprite.Sprite):
      
      def update(self, direction):
           self.rect.x += direction
-     
+
 class Extra(pygame.sprite.Sprite):
      def __init__(self, side, screen_width):
           super().__init__()
